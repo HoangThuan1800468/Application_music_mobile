@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <ListView
+        android:id="@+id/lvTatCaNhac"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnTat"
+        android:background="@color/cardview_shadow_end_color"
+        android:text="Tắt Nhạc"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:layout_above="@+id/ChonDS"
+        android:layout_alignRight="@+id/ChonDS"
+        android:layout_alignEnd="@+id/ChonDS"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+    <RadioGroup
+        android:id="@+id/ChonDS"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Allbh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="Tất cả"
+            android:textColor="#fff"
+            android:checked="true"
+            android:textSize="15sp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/Dsbh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Danh sách yêu thích"
+            android:textColor="#fff"
+            android:textSize="15sp"></RadioButton>
+
+        <Button
+            android:id="@+id/btnChon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_shadow_end_color"
+            android:text="Chọn"
+            android:textColor="#fff"
+            android:textSize="15sp"></Button>
+    </RadioGroup>
+
+
+</RelativeLayout>
